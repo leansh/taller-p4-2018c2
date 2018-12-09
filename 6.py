@@ -6,7 +6,10 @@ def subconjuntos_suma_exacta(L, n):
 	if l == 0:
 		return []
 	elif l == 1:
-		return L[0] == n
+		if L[0] == n:
+			return [n]
+		else:
+			return []
 	else:
 		# x es parte del subconjunto final
 		x = L[0]
